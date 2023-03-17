@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet Css</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&family=Shantell+Sans:ital,wght@1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="pagelogo">CheatSheet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./htmlpage.html" id="hypertext">Html</a></li>
+                <li><a href="./csspage.html" id="active3">Css</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="#pagelogo"><img class="arrowimg" src="./img/arrowimg.png" alt=""></a>
+        <h2>Css</h2>
+        <div class="index">
+            <ol>
+                <li><a href="#style-rules">Styles rules</a></li>
+                <li><a href="#selectors">Selectors</a></li>
+                <li><a href="#properties">Properties</a></li>
+            </ol>
+            <img class='first-img' src="./img/cssnobg.png" alt="cssnobackground">
+        </div>
+
+        <p class="text-container">
+            CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the presentation of a
+            document written in HTML or XML. CSS helps to separate the presentation of a web page from its content,
+            allowing designers to easily change the appearance of a web page without having to alter the underlying
+            content. <br><br>
+
+            To show how powerful CSS is, here's a screenshot of the HTML page without CSS:
+        </p>
+
+        <img id="screenshot" src="./img/screenshot.png" alt="screenshot">
+
+        <p class="text-container">
+            Overall, CSS is an essential part of modern web development and is critical to creating attractive,
+            accessible, and responsive websites.
+        </p>
+
+        <div id="style-rules">
+            <h3>I. Style Rules</h3>
+            <p class="text-container">
+                Style rules are a fundamental concept in CSS. A style rule consists of a selector and one or more
+                properties and their associated values. The selector identifies the HTML elements to which the
+                properties should be applied, and the properties define the visual appearance and behavior of those
+                elements. <br><br>
+
+                Here is an example of a basic style rule:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    <span class="green">selector</span> {<br>
+                    <span class="two-space blue">property1: <span
+                            class="purple">value1</span></span><strong>;</strong><br>
+                    <span class="two-space blue">property2: <span
+                            class="purple">value2</span></span><strong>;</strong><br>
+                    <span class="two-space blue">property3: <span
+                            class="purple">value3</span></span><strong>;</strong><br>
+                    }
+                </p>
+            </div>
+            <p class="text-container">
+                In this example, "selector" is the selector, and "property1," "property2," and "property3" are
+                properties. "Value1," "value2," and "value3" are the associated values for each property. <br> <br>
+                For instance, suppose you want to set the font size and color of all headings (h1, h2, h3, etc.) on a
+                web page to 24px and blue, respectively. You can create a style rule as follows:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    <span class="green">h1, h2, h3</span> {<br>
+                    <span class="two-space blue">font-size: <span
+                            class="purple">24px</span></span><strong>;</strong><br>
+                    <span class="two-space blue">color: <span class="purple">blue</span></span><strong>;</strong><br>
+                    }
+                </p>
+            </div>
+
+            <p class="text-container">
+                In this example, "h1, h2, h3" is the selector, and "font-size" and "color" are the properties. "24px"
+                and "blue" are the associated values for each property. <br><br>
+                Style rules can be applied to HTML elements in several ways, including: <br><br>
+
+                1. <strong> Inline styles:</strong> Style rules can be applied directly to an HTML element using the
+                "style" attribute. For
+                example:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;<span class="pink">h1</span> <span class="green">style="color: red;"</span>&gt; Hello,
+                    World!&lt;/<span class="pink">h1</span>&gt;
+                </p>
+            </div>
+
+            <p class="text-container">
+                2. <strong>Internal styles:</strong> Style rules can be defined within the "head" section of an HTML
+                document using the "style" element. For example:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;<span class="pink">head</span>&gt;<br>
+                    <span class="two-space">&lt;<span class="pink">style</span>&gt;</span><br>
+                    <span class="four-space">h1 {</span> <br>
+                    <span class="five-space"> color: red; </span> <br>
+                    <span class="four-space">}</span><br>
+                    <span class="two-space">&lt;/<span class="pink">style</span>&gt;</span><br>
+                    &lt;/<span class="pink">head</span>&gt;<br>
+                </p>
+            </div>
+
+            <p class="text-container">
+                3. <strong>External Styles:</strong> Style rules can be defined in an external CSS file and linked to an
+                HTML document using the "link" element. For example:
+            </p>
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;<span class="pink">head</span>&gt;<br>
+                    <span class="two-space">&lt;<span class="pink">link</span> rel=<span
+                            class="green">"stylecheet"</span> href=<span
+                            class="green">"styles.css"</span>&gt;</span><br>
+                    &lt;/<span class="pink">head</span>&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <div id="selectors">
+            <h3>II. Selectors</h3>
+            <p class="text-container">
+                CSS selectors are used to select and style specific HTML elements on a web page. There are several types
+                of selectors in CSS: <br><br>
+
+                1. <strong> Type selectors:</strong> Type selectors are used to select HTML elements based on their tag
+                name. For example,
+                the following code selects all the paragraphs on the page and sets their font size to 16px:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    <span class="pink">p</span> {<br>
+                    <span class="two-space blue">font-size: <span class="purple">16px</span></span><strong>;</strong>
+                    <br>
+                    }
+                </p>
+            </div>
+
+            <p class="text-container">
+                2. <strong>Class selectors:</strong> Class selectors are used to select HTML elements based on their
+                class attribute. For example, the following code selects all the elements with the class "highlight" and
+                sets their background color to yellow:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    <span class="green">.highlight</span> {<br>
+                    <span class="two-space blue">background-color: <span
+                            class="purple">yellow</span></span><strong>;</strong>
+                    <br>
+                    }
+                </p>
+            </div>
+
+            <p class="text-container">
+                3. <strong>ID selectors:</strong> ID selectors are used to select HTML elements based on their ID
+                attribute. IDs are meant to be unique on a page, so there can be only one element with a particular ID.
+                For example, the following code selects the element with the ID "main" and sets its font size to 20px:
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+                    <span class="green">#main</span> {<br>
+                    <span class="two-space blue">font-size: <span class="purple">20px</span></span><strong>;</strong>
+                    <br>
+                    }
+                </p>
+            </div>
+
+            <p class="text-container">These are just a few examples of the many CSS selectors available. By using
+                selectors effectively, designers can create complex and visually appealing web pages.</p>
+        </div>
+
+        <div id="properties">
+            <h3>III. Properties</h3>
+            <p class="text-container">
+                CSS properties are used to define the visual appearance and behavior of HTML elements on a web page. CSS
+                properties are applied to HTML elements using style rules, which consist of one or more properties and
+                their
+                associated values. Here are some common CSS properties and their descriptions: <br><br>
+
+                1. <strong>Color:</strong> Sets the color of text, backgrounds, and other elements. Values can be
+                specified
+                using color names, hex codes, or RGB values.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">color: <span class="purple">red</span></span><strong>;</strong> <br>
+                    <span class="two-space blue">background-color: <span
+                            class="purple">#2596be</span></span><strong>;</strong>
+                </p>
+            </div>
+
+            <p class="text-container">
+                2. <strong>Font-size:</strong> Sets the size of text. Values can be specified in pixels, ems, or
+                percentages.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">font-size: <span class="purple">16px</span></span><strong>;</strong>
+                </p>
+            </div>
+
+            <p class="text-container">
+                3. <strong>Font-family:</strong> Sets the font family for text. Values can be specified using font names
+                or generic font families.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">font-family: <span class="purple">Arial,
+                            sans-serif</span></span><strong>;</strong>
+                </p>
+            </div>
+
+            <p class="text-container">
+                4. <strong>Padding:</strong> Sets the padding around an element, which is the space between the
+                element's content and its border. Values can be specified in pixels, ems, or percentages.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">padding: <span class="purple">10px</span></span><strong>;</strong>
+                </p>
+            </div>
+
+            <p class="text-container">
+                5. <strong>Margin:</strong> Sets the margin around an element, which is the space between the element's
+                border and the surrounding elements. Values can be specified in pixels, ems, or percentages.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">margin: <span class="purple">20px</span></span><strong>;</strong>
+                </p>
+            </div>
+
+            <p class="text-container">
+                6. <strong>Width and height:</strong> Sets the width and height of an element. Values can be specified
+                in pixels, ems, or percentages.
+            </p>
+
+            <div class="html-box">
+                <p class="html-box-text">
+
+                    <span class="two-space blue">width: <span class="purple">100%</span></span><strong>;</strong><br>
+                    <span class="two-space blue">height: <span class="purple">200px</span></span><strong>;</strong>
+                </p>
+            </div>
+            <p class="text-container">
+                These are just a few examples of the many CSS properties available. By using properties effectively,
+                designers can create visually appealing and interactive web pages that are easy to use and navigate.
+            </p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Created by: <span id="auth">Fabio Lacerda</span></p>
+    </footer>
+</body>
+
+</html>
