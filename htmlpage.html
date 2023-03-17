@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet Html</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&family=Shantell+Sans:ital,wght@1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="pagelogo">CheatSheet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./htmlpage.html" id="active2">Html</a></li>
+                <li><a href="./csspage.html" id="cascading">Css</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Html</h2>
+        <a href="#pagelogo"><img class="arrowimg" src="./img/arrowimg.png" alt=""></a>
+        <div class="index">
+            <ol>
+                <li><a href="#structure">Html Structure</a></li>
+                <li><a href="#htags">Headings Tags</a></li>
+                <li><a href="#ptag">Paragraph Tag</a></li>
+                <li><a href="#table">Tables</a></li>
+            </ol>
+            <img class='first-img' src="./img/htmlnobg.png" alt="htmlnobackground">
+        </div>
+
+        <p class="text-container">HTML stands for Hypertext Markup Language. It is a markup language used for creating
+            web pages and other documents that can be displayed in a web browser. HTML uses a set of tags to define the
+            structure and content of a document.
+            <br>
+            <br>
+            In other words, HTML is a language used to create the basic structure of web pages. It is made up of a
+            series of elements, or tags, that tell the web browser how to display the content. For example, the
+            &lt;h1&gt;
+            tag is used to define a heading, while the &lt;p&gt; tag is used to define a paragraph.
+        </p>
+
+        <div id="structure">
+            <h3>I. Html Structure</h3>
+            <p class="text-container">
+                The basic structure of an HTML document consists of two main parts:
+                <br>
+                <br>
+                1. The head section, which contains information about the document such as its title, metadata, and
+                links
+                to other resources.
+                <br>
+                2. The body section, which contains the actual content of the document.
+                <br>
+                <br>
+                Here's an example of what a basic HTML document might look like:
+            </p>
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;!<span class="pink">DOCTYPE</span> <span class="green">html</span>&gt;<br>
+
+                    &lt;<span class="pink">html</span>&gt;<br>
+
+                    &lt;<span class="pink">head</span>&gt;<br>
+
+                    &lt;<span class="pink">title</span>&gt;<span> My Web Page</span> &lt;/<span
+                        class="pink">title</span>&gt;<br>
+
+                    &lt;/<span class="pink">head</span>&gt;<br>
+
+                    <span class="two-space">&lt;<span class="pink">body</span>&gt;</span><br><br>
+
+                    <span class="grey two-space">&lt;-- Page content here --&gt;<br><br></span>
+
+                    <span class="two-space">&lt;/<span class="pink">body</span>&gt;</span><br>
+                    &lt;/<span class="pink">html</span>&gt;<br>
+                </p>
+            </div>
+        </div>
+
+        <div id="htags">
+            <h3>II. Heading Tags</h3>
+            <p class="text-container">
+                In HTML, headings are used to provide structure and hierarchy to the content of a webpage. They are used
+                to indicate the main topics or sections of the page and to help users navigate the content. <br><br>
+
+                There are six levels of headings in HTML, from &lt;<span class="pink">h1</span>&gt; (the most important
+                heading) to
+                &lt;<span class="pink">h6</span>&gt;
+                (the least important heading). The text inside the heading tags is usually displayed in a larger and/or
+                bold font, depending on the CSS styling applied to the page. <br><br>
+
+                Here's an example of how headings might be used in an HTML document:
+            </p>
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;!<span class="pink">DOCTYPE</span> <span class="green">html</span>&gt;<br>
+
+                    &lt;<span class="pink">html</span>&gt;<br>
+
+                    &lt;<span class="pink">head</span>&gt;<br>
+
+                    &lt;<span class="pink">title</span>&gt;<span> Heading Tags</span> &lt;/<span
+                        class="pink">title</span>&gt;<br>
+
+                    &lt;/<span class="pink">head</span>&gt;<br>
+
+                    <span class="two-space">&lt;<span class="pink">body</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;<span class="pink">h1</span>&gt; Heading 1 &lt;/<span
+                            class="pink">h1</span>&gt;</span><br>
+                    <span class="two-space">&lt;<span class="pink">h2</span>&gt; Heading 2 &lt;/<span
+                            class="pink">h2</span>&gt;</span><br>
+                    <span class="two-space">&lt;<span class="pink">h3</span>&gt; Heading 3 &lt;/<span
+                            class="pink">h3</span>&gt;</span><br>
+                    <span class="two-space">&lt;<span class="pink">h4</span>&gt; Heading 4 &lt;/<span
+                            class="pink">h4</span>&gt;</span><br>
+                    <span class="two-space">&lt;<span class="pink">h5</span>&gt; Heading 5 &lt;/<span
+                            class="pink">h5</span>&gt;</span><br>
+                    <span class="two-space">&lt;<span class="pink">h6</span>&gt; Heading 6 &lt;/<span
+                            class="pink">h6</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;/<span class="pink">body</span>&gt;</span><br>
+                    &lt;/<span class="pink">html</span>&gt;<br>
+                </p>
+            </div>
+            <p class="text-container">
+                This is what the code will represent on the webpage:
+            </p>
+            <div class="white-page">
+                <div class="web-bar">
+                    <div class="red-dot"></div>
+                    <div class="yllw-dot"></div>
+                    <div class="green-dot"></div>
+                </div>
+                <h4 id="h1tag">Heading 1</h4><br>
+                <h4 id="h2tag">Heading 2</h4><br>
+                <h4 id="h3tag">Heading 3</h4><br>
+                <h4>Heading 4</h4><br>
+                <h5>Heading 5</h5><br>
+                <h6>Heading 6</h6><br>
+            </div>
+            <p class="text-container">
+                By using headings in this way, you can create a clear and logical structure for your webpage that
+                makes
+                it easier for users to understand and navigate.
+            </p>
+        </div>
+
+        <div id="ptag">
+            <h3>III. Paragraph Tag</h3>
+            <p class="text-container">
+                The paragraph tag, or &lt;<span class="pink">p</span>&gt;tag, is an HTML tag used to define a paragraph
+                of
+                text. It is one of the most commonly used tags in HTML, as it allows you to add textual content to a web
+                page.
+
+                When you use the &lt;<span class="pink">p</span>&gt; tag, you are essentially creating a new paragraph
+                of
+                text that will be separated from other paragraphs with spacing. By default, the browser will add some
+                margin
+                above and below the paragraph to make it visually distinct from other content on the page.
+            </p>
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;!<span class="pink">DOCTYPE</span> <span class="green">html</span>&gt;<br>
+
+                    &lt;<span class="pink">html</span>&gt;<br>
+
+                    &lt;<span class="pink">head</span>&gt;<br>
+
+                    &lt;<span class="pink">title</span>&gt;<span> Paragraph Tag</span> &lt;/<span
+                        class="pink">title</span>&gt;<br>
+
+                    &lt;/<span class="pink">head</span>&gt;<br>
+
+                    <span class="two-space">&lt;<span class="pink">body</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;<span class="pink">p</span>&gt; This is an example paragraph of text.
+                        <br>
+                        It can
+                        contain multiple sentences, links, <br> and other inline HTML elements.&lt;/<span
+                            class="pink">p</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;/<span class="pink">body</span>&gt;</span><br>
+                    &lt;/<span class="pink">html</span>&gt;<br>
+                </p>
+            </div>
+            <p class="text-container">
+                By using the paragraph tag in this way, you can create a block of text that is separated from other
+                content on your web page, making it easier for your visitors to read and understand the information you
+                are presenting.
+            </p>
+        </div>
+
+        <div id="table">
+            <h3>IV.Tables</h3>
+            <p class="text-container">
+                A table is an HTML element used to display data in rows and columns. Tables are commonly used to present
+                data in a structured format, such as product listings, schedules, or other types of data that can be
+                organized into rows and columns. <br><br>
+
+                To create a table, you use the &lt;<span class="pink">table</span>&gt; element, which contains one or
+                more &lt;<span class="pink">tr</span>&gt; (table row) elements, which in turn contain one or more
+                &lt;<span class="pink">td</span>&gt; (table data) elements. Each &lt;<span class="pink">td</span>&gt;
+                element represents a single cell in the table, while each &lt;<span class="pink">tr</span>&gt; element
+                represents a row in the table. <br><br>
+
+                Here is an example of how to create a simple table in HTML:
+            </p>
+            <div class="html-box">
+                <p class="html-box-text">
+                    &lt;!<span class="pink">DOCTYPE</span> <span class="green">html</span>&gt;<br>
+
+                    &lt;<span class="pink">html</span>&gt;<br>
+
+                    &lt;<span class="pink">head</span>&gt;<br>
+
+                    &lt;<span class="pink">title</span>&gt;<span> Tables</span> &lt;/<span
+                        class="pink">title</span>&gt;<br>
+
+                    &lt;/<span class="pink">head</span>&gt;<br>
+
+                    <span class="two-space">&lt;<span class="pink">body</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;<span class="pink">table</span>&gt;</span><br>
+                    <!-- first table row -->
+                    <span class="three-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                    <span class="four-space">&lt;<span class="pink">td</span>&gt;</span>
+                    Item Name &lt;/<span class="pink">td</span>&gt;<br>
+                    <span class="four-space">&lt;<span class="pink">td</span>&gt;</span>
+                    Quantity &lt;/<span class="pink">td</span>&gt;<br>
+                    <span class="three-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+                    <!-- second table row -->
+                    <span class="three-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                    <span class="four-space">&lt;<span class="pink">td</span>&gt;</span>
+                    Computer &lt;/<span class="pink">td</span>&gt;<br>
+                    <span class="four-space">&lt;<span class="pink">td</span>&gt;</span>
+                    10 &lt;/<span class="pink">td</span>&gt;<br>
+                    <span class="three-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+
+                    <span class="two-space">&lt;/<span class="pink">table</span>&gt;</span><br><br>
+
+                    <span class="two-space">&lt;/<span class="pink">body</span>&gt;</span><br>
+                    &lt;/<span class="pink">html</span>&gt;<br>
+                </p>
+            </div>
+            <p class="text-container">
+                In this example, we have a table with two rows and two columns. Each cell contains some text. When
+                rendered in a web browser, the table will display the data in a grid-like structure. <br><br>
+                This is what the code above will represent on the webpage:
+            </p>
+            <table>
+                <tr>
+                    <td>Item Name</td>
+                    <td>Quantity</td>
+                </tr>
+                <tr>
+                    <td>Computer</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
+        <p class="text-container">
+            In addition to the basic table structure, HTML provides several additional elements that can be used to
+            further define the table and its contents: <br><br>
+
+            1. &lt;<span class="pink">thead</span>&gt;: This element defines the table header, which typically contains
+            column
+            headings. <br>
+
+            2. &lt;<span class="pink">th</span>&gt;: This element defines a table header cell, which is used to display
+            column headings. <br>
+
+            3. &lt;<span class="pink">tfoot</span>&gt;: This element defines the table footer, which typically contains
+            summary information. <br>
+
+            4. &lt;<span class="pink">caption</span>&gt;: This element is used to add a caption to the table. <br><br>
+
+            Here's an example of a more complex HTML table that uses these additional elements:
+        </p>
+        <div class="html-box">
+            <p class="html-box-text">
+                &lt;!<span class="pink">DOCTYPE</span> <span class="green">html</span>&gt;<br>
+
+                &lt;<span class="pink">html</span>&gt;<br>
+
+                &lt;<span class="pink">head</span>&gt;<br>
+
+                &lt;<span class="pink">title</span>&gt;<span> Tables</span> &lt;/<span class="pink">title</span>&gt;<br>
+
+                &lt;/<span class="pink">head</span>&gt;<br>
+
+                <span class="two-space">&lt;<span class="pink">body</span>&gt;</span><br><br>
+
+                <span class="two-space">&lt;<span class="pink">table</span>&gt;</span><br>
+
+                <span class="three-space">&lt;<span class="pink">caption</span>&gt;</span>Monthly Sales&lt;/<span
+                    class="pink">caption</span>&gt;<br>
+                <!-- Table Heading -->
+                <span class="three-space">&lt;<span class="pink">thead</span>&gt;</span><br>
+                <span class="four-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                <span class="five-space">&lt;<span class="pink">th</span>&gt;</span>
+                Month &lt;/<span class="pink">th</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">th</span>&gt;</span>
+                Product A &lt;/<span class="pink">th</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">th</span>&gt;</span>
+                Product B &lt;/<span class="pink">th</span>&gt;<br>
+                <span class="four-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+                <span class="three-space">&lt;/<span class="pink">thead</span>&gt;</span><br><br>
+                <!-- Table Body -->
+                <span class="three-space">&lt;<span class="pink">tbody</span>&gt;</span><br>
+                <!-- first row -->
+                <span class="four-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                January &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $100 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $200 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="four-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+                <!-- second row -->
+                <span class="four-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                February &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $120 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $210 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="four-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+                <span class="three-space">&lt;/<span class="pink">tbody</span>&gt;</span><br><br>
+                <!-- table footer -->
+                <span class="three-space">&lt;<span class="pink">tfoot</span>&gt;</span><br>
+                <span class="four-space">&lt;<span class="pink">tr</span>&gt;</span><br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                Total &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $220 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="five-space">&lt;<span class="pink">td</span>&gt;</span>
+                $410 &lt;/<span class="pink">td</span>&gt;<br>
+                <span class="four-space">&lt;/<span class="pink">tr</span>&gt;</span><br>
+                <span class="three-space">&lt;/<span class="pink">tfoot</span>&gt;</span><br>
+
+                <span class="two-space">&lt;/<span class="pink">table</span>&gt;</span><br><br>
+
+                <span class="two-space">&lt;/<span class="pink">body</span>&gt;</span><br>
+                &lt;/<span class="pink">html</span>&gt;<br>
+            </p>
+        </div>
+
+        <p class="text-container">
+            In this example, we have a table that displays monthly sales for three different products. We use the
+            &lt;<span class="pink">caption</span>&gt; element to add a caption to the table, and the
+            &lt;<span class="pink">thead</span>&gt; and
+            &lt;<span class="pink">tfoot</span>&gt; elements to define the header and footer of the table, respectively.
+            We also use the
+            &lt;<span class="pink">th</span>&gt; element to
+            display column headings in the table header, and the &lt;<span class="pink">tbody</span>&gt; element to
+            define the main body of the
+            table. <br><br>
+
+            This is what the code above will represent on the webpage:
+        </p>
+
+        <table id="table2">
+            <caption>Monthly Sales</caption>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Product A</th>
+                    <th>Product B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$120</td>
+                    <td>$210</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>$220</td>
+                    <td>$410</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p class="text-container">Overall, HTML tables provide a powerful way to display structured data on a web page.
+            By using the various table elements and attributes, you can create tables that are both functional and
+            visually appealing.</p>
+
+    </main>
+    <footer>
+        <p>Created by: <span id="auth">Fabio Lacerda</span></p>
+    </footer>
+</body>
+
+</html>
